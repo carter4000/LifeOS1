@@ -30,7 +30,7 @@ set -euo pipefail
 # install never hard-fails on a network hiccup.
 # Repo owner/name is parameterized — set at publish time, never hard-coded here.
 LIFEOS_REPO="${LIFEOS_REPO:-danielmiessler/LifeOS}"
-LIFEOS_FALLBACK_TAG="v7.0.0"
+LIFEOS_FALLBACK_TAG="v7.1.1"
 if [ -n "${LIFEOS_VERSION:-}" ]; then
   LIFEOS_TAG="v${LIFEOS_VERSION}"
 elif [ -z "${LIFEOS_TAG:-}" ]; then
